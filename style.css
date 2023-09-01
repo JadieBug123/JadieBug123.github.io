@@ -23,8 +23,8 @@ body {
     display: flex;
     align-items:center; 
     color: white;
-    padding: 10px;
-    font-size: 70px;
+    flex: 1;
+    margin: 0; 
     }
     #nav-ul {
         list-style-image:none;
@@ -36,7 +36,6 @@ body {
     a {
         text-decoration:none;
         color: white;
-        font-size: 35px;
     }
     
     /* main container area beneath menu */
@@ -49,47 +48,21 @@ body {
     margin-right: 25px;
     padding: 10px;
     }
+    .sidebar-img {
+        width: 200px; 
+    }
     .content {
     flex: 1px;
     padding: 15px;
     }
     
     
-    
-    
-    h2 { font-size: 60px;
-    text-align: left;
-    font-family: cursive;
-    }
-    
-    
-    h3 {
-    font-size: 45px;
-    text-align: top-left;
-    }
-    
-    
     /* portfolio styles */
     
-    
-    img {
-    padding: 20px;
-    width: 450px;
-    height: 450px;
+    #interests {
+        border: 4px rgb(98, 150, 245) ridge;
+        padding: 8px;
     }
-
-
-    
-    
-    p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    text-align: left;
+    h2, h3 {
+        margin: 0px;
     }
-    
-    
-    ul{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 30px;
-        text-align: left;
-        }
