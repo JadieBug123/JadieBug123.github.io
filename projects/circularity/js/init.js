@@ -65,8 +65,7 @@ var init = function (window) {
            function update() { 
            for (var i = 0; i < circles.length; i++) { 
            physiks.updatePosition(circles[i]); 
-           game.checkCirclePosition(circles[i]); 
-            
+           game.checkCirclePosition(circles[i]);  
         }
     
         /* 
