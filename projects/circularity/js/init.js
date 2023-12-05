@@ -24,11 +24,11 @@ var init = function (window) {
            var circles = [];
 
         // TODO 2 : Create a function that draws a circle 
-        function drawCircle() {
-        circle = draw.randomCircleInArea(canvas, true, true, "#999", 2 ); 
+        function drawCircles() {
+        circles = draw.randomCircleInArea(canvas, true, true, "#999", 2 ); 
         physikz.addRandomVelocity(circle, canvas);
-        view.addChild(circle); 
-        circles.push(circle); 
+        view.addChild(circles); 
+        circles.push(circles); 
         }
 
         // TODO 3 / 7 : Call the drawCircle() function
@@ -39,7 +39,7 @@ var init = function (window) {
         drawCircle();*/
 
         for (var i = 0; i < numcircles; i++) {
-            drawCircle();
+            drawCircles();
         }
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
@@ -115,9 +115,9 @@ var init = function (window) {
         view.addChild(fps);
         app.addUpdateable(fps);
         
-        game.circle = circle;
+        game.circle = circles;
         game.circles = circles;
-        game.drawCircle = drawCircle;
+        game.drawCircle = drawCircles;
         game.update = update;
         
         app.addUpdateable(window.opspark.game);
