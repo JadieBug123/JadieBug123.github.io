@@ -26,7 +26,7 @@ var init = function (window) {
         // TODO 2 : Create a function that draws a circle 
         function drawCircles() {
         circles = draw.randomCircleInArea(canvas, true, true, "#999", 2 ); 
-        physikz.addRandomVelocity(circle, canvas);
+        physikz.addRandomVelocity(circles, canvas);
         view.addChild(circles); 
         circles.push(circles); 
         }
@@ -85,11 +85,11 @@ var init = function (window) {
         Function. If that circle drifts off the screen, this Function should move
         it to the opposite side of the screen.
         */
-        game.checkCirclePosition = function(circle) {
+        game.checkCirclePosition = function(circles) {
 
             // if the circle has gone past the RIGHT side of the screen then place it on the LEFT
-            if ( circle.x > canvas.width) {
-                circle.x = 0;
+            if ( circles.x > canvas.width) {
+                circles.x = 0;
             } 
         } 
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
@@ -100,9 +100,9 @@ var init = function (window) {
             game.checkCirclePosition(circles[3]); 
             game.checkCirclePosition(circles[4]);*/
 
-            game.checkCirclePosition = function(circle) {
-                if (circle.x > canvas.width) {
-                    circle.x = 0; 
+            game.checkCirclePosition = function(circles) {
+                if (circles.x > canvas.width) {
+                    circles.x = 0; 
                 }
             }
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
