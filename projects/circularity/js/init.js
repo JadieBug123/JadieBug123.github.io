@@ -92,6 +92,12 @@ var init = function (window) {
             game.checkCirclePosition = function(circle) {
                 if (circle.x > canvas.width) {
                     circle.x = 0; 
+                } 
+                if (circle.y > canvas.height){ 
+                    circle.y = 0 
+                }
+                if(circle.y < 0){ 
+                    circle.y = canvas.height; 
                 }
             }
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
