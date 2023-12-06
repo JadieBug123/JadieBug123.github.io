@@ -38,12 +38,12 @@ var init = function (window) {
         drawCircle();
         drawCircle();*/
 
-        for (var i = 0; i < circle; i++) {
+     /*   for (var i = 0; i < circle; i++) {
             drawCircle();
-        }
+        }*/
 
-        for(var loops = 0; loops <= 100; loops++) {
-            drawCircle()
+        for(var i = 0; i <= 100; i++) {
+            drawCircle();
         }
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
