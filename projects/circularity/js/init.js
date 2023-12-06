@@ -42,7 +42,7 @@ var init = function (window) {
             drawCircle();
         }*/
 
-        for(var i = 0; i <= 100; i++) {
+        for(var loop = 0; loop <= 100; loop++) {
             drawCircle();
         }
         ////////////////////////////////////////////////////////////
@@ -56,7 +56,7 @@ var init = function (window) {
         */
         function update() {
             // TODO 4 : Update the circle's position //
-            for (var i = 0; i < circle; i++) {
+            for (var i = 0; i < circles.length; i++) {
                 physikz.updatePosition(circles[i]);
                 game.checkCirclePosition(circles[i]); 
             }
