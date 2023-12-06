@@ -63,9 +63,9 @@ var init = function (window) {
             physikz.updatePosition(circles[4]); 
             }*/
 
-            /*for (var i = 0; i < circle; i++) {
+            for (var i = 0; i < circle; i++) {
                 physikz.updatePosition(circles[i]); 
-            }*/
+            }
             
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
            /*game.checkCirclePosition(circles[0]); 
@@ -80,7 +80,7 @@ var init = function (window) {
             // TODO 9 : Iterate over the array
            function update() { 
            for (var i = 0; i < circles.length; i++) { 
-           physiks.updatePosition(circles[i]); 
+           physikz.updatePosition(circles[i]); 
            game.checkCirclePosition(circles[i]);  
         }
     
@@ -119,9 +119,9 @@ var init = function (window) {
         view.addChild(fps);
         app.addUpdateable(fps);
         
-        game.circle = circle;
-        game.circle = circle;
-        game.drawCircle = drawCircles;
+        game.circles = circle;
+        game.circles = circles;
+        game.drawCircle = drawCircle;
         game.update = update;
         
         app.addUpdateable(window.opspark.game);
