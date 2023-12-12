@@ -76,7 +76,7 @@ var init = function (window) {
         it to the opposite side of the screen.
         */
         
-        } 
+        
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
             
             /*game.checkCirclePosition(circles[0]); 
@@ -116,7 +116,7 @@ var init = function (window) {
         
         app.addUpdateable(window.opspark.game);
     }
-
+} 
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if((typeof process !== 'undefined') &&
