@@ -24,8 +24,8 @@ var init = function (window) {
            var circles = [];
 
         // TODO 2 : Create a function that draws a circle 
-        function drawCircle() {
-        circles = draw.randomCircleInArea(canvas, true, true, "#999", 2 ); 
+        var drawCircle = function drawCircle() {
+        circle = draw.randomCircleInArea(canvas, true, true, "#999", 2 ); 
         physikz.addRandomVelocity(circle, canvas, 15, 15);
         view.addChild(circle); 
         circles.push(circle); 
@@ -42,7 +42,7 @@ var init = function (window) {
             drawCircle();
         }*/
 
-        for(var loop = 0; loop <= 100; loop++) {
+        for(var loops = 0; loops < 100; loops++) {
             drawCircle();
         }
         ////////////////////////////////////////////////////////////
@@ -60,6 +60,7 @@ var init = function (window) {
                 physikz.updatePosition(circles[i]);
                 game.checkCirclePosition(circles[i]); 
             }
+        } 
             
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
            
@@ -85,7 +86,7 @@ var init = function (window) {
             game.checkCirclePosition(circles[4]);*/
 
             game.checkCirclePosition = function(circle) {
-                if (circle.x > 0) {
+                if (circle.x < 0) {
                     circle.x = canvas.width; 
                 } 
                 if (circle.y > canvas.height){ 
@@ -98,17 +99,17 @@ var init = function (window) {
                    if ( circle.x > canvas.width) {
                     circle.x = 0;
             }
+        } 
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
-        }
-    } 
+        
+    
         /////////////////////////////////////////////////////////////
         // --- NO CODE BELOW HERE  --- DO NOT REMOVE THIS CODE --- //
         /////////////////////////////////////////////////////////////
         
         view.addChild(fps);
         app.addUpdateable(fps);
-        ""
-        game.circles = circle;
+        game.circle = circle;
         game.circles = circles;
         game.drawCircle = drawCircle;
         game.update = update;
